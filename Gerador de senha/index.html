@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="action.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Gerador de Senhas</h1>
+    <div class="output">
+      <label for="gerada" id="senhaLabel">Senha:</label>
+      <input type="text" id="gerada" readonly>
+      <div class="button">
+        <button id="generatePass">Gerar senha</button>
+        <button id="copyPass">Copiar senha</button>
+      </div>
+    </div>
+    <div class="input">
+      <label for="length">Tamanho da senha <span id="lengthValue">10</span></label>
+      <input type="range" id="length" min="4" max="20" value="10">
+    </div>
+    <div class="checkboxes">
+      <div class="checkbox">
+        <input type="checkbox" id="lowercase" checked>
+        <label for="lowercase">Letras minusculas</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="uppercase" checked>
+        <label for="uppercase">Letras maiusculas</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="numbers" checked>
+        <label for="numbers">Numeros</label>
+      </div>
+      <div class="checkbox">
+        <input type="checkbox" id="symbols" checked>
+        <label for="symbols">Simbolos</label>
+      </div>
+    </div>
+    <div class="output">
+      <label>Força da Senha: <span id="forcadasenha">0</span></label>
+      <div class="password-strength-bar"></div>
+    </div>
+  </div>
+</body>
+
+</html>

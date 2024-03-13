@@ -1,0 +1,154 @@
+@font-face {
+  font-family: 'CoralinaFont';
+  src: url('CoralinaFont.ttf') format('truetype'); /* ajuste o caminho conforme necessário */
+}
+@font-face {
+  font-family: 'AppleStory';
+  src: url('AppleStory.ttf') format('truetype'); /* ajuste o caminho conforme necessário */
+}
+body {
+  font-family: 'CoralinaFont', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+  margin-top: 150px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 70px;
+    font-family: 'CoralinaFont';
+    font-style: italic;
+    text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.output {
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.output label {
+  font-weight: bold;
+  color: #000000;
+}
+
+.output span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.button {
+  text-align: center;
+}
+
+.button button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  margin-right: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button button:hover {
+  background-color: #0056b3;
+}
+
+.input label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.input input[type="range"] {
+  width: 80%;
+  -webkit-appearance: none;
+  height: 5px;
+  background: #d3d3d3;
+  outline: none;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+
+.input input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.input input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #007bff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.checkboxes {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.checkbox {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.checkbox input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.password-strength-bar {
+  height: 10px;
+  width: 100%;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.password-strength-bar.weak {
+  background-color: #dc3545;
+}
+
+.password-strength-bar.medium {
+  background-color: #ffc107;
+}
+
+.password-strength-bar.strong {
+  background-color: #28a745;
+}
+
+#gerada {
+  width: calc(100% - 22px); 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+#gerada:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
